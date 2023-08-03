@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>raise the query</title>
+<link href="CSS/body-style.css" rel="stylesheet">
+<link href="CSS/list-style.css" rel="stylesheet">
+<link href="CSS/footer-style.css" rel="stylesheet">
+</head>
+<body class="animated-bg" style="background-repeat:no-repeat;background-size:cover">
+<ul>
+<li ><a href="index.html">HOME</a></li>
+<li><a href="movies.html">MOVIE INFO</a></li>
+<li><a href="aboutus.html">ABOUT US</a></li>
+<li ><a href="contactUs.html">QUERIES</a></li>
+</ul>
+<h2 style="font-style:bold;font-size:20px"></h2>
+<div style="margin:50px">
+<form method="post" action="raiseQuery.php">
+<input type="text" value="<?php echo $email; ?>" id="em" name="em" style="display:none" >
+<script>
+function greet()
+{
+document.getElementById('gh').innerHTML="HELLO...!!!!!"+document.getElementById('em').value;
+}
+greet();
+</script>
+<p style="text-align:center;display:block;font-size:25px;font-style:bold;color:grey;padding:5px;margin:5px">Registered Email<input type="email" value="" style="padding:5px;margin:9px" name="qre" required></p>
+<p style="text-align:center;display:block;font-size:25px;font-style:bold;color:grey;padding:5px;margin:5px">Today Date<input type="date" value="" name="qdt" style="padding:5px;margin:9px" required></p>
+<p style="text-align:center;display:block;font-size:25px;font-style:bold;color:grey;padding:5px;margin:5px">Issue Your Facing</p>
+<p style="text-align:center"><textarea rows="5" cols="50" placeholder="type the issue you are facing with our website here" name="issue" style='display:inline'></textarea></p>
+<p style="text-align:center"><input type="submit" value="SUBMIT" style="background-color:green;font-size:25px;font-style:bold"></p>
+</form>
+</div>
+<footer class="footer">
+ <div class="footer-content">
+  <p>&copy;2023 ROBOT SPACE. All Rights Reserved.</p>
+ </div>
+</footer>
+</body>
+</html>

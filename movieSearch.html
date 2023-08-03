@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Searching...</title>
+<link href="CSS/list-style.css" rel="stylesheet" >
+<link href="CSS/body-style.css" rel="stylesheet" >
+<link href="CSS/footer-style.css" rel="stylesheet">
+<style>
+table{
+border-collapse:collapse;
+width:100%;
+}
+th,td{
+ border:1px solid black;
+ padding:8px;
+}
+</style>
+</head>
+<body class="animated-bg" style="background-repeat:no-repeat;background-size:cover">
+<ul>
+<li ><a href="index.html">HOME</a></li>
+<li><a href="movies.html">MOVIE INFO</a></li>
+<li><a href="aboutus.html">ABOUT US</a></li>
+<li ><a href="contactUs.html">QUERIES</a></li>
+</ul>
+<div>
+  <form method="post" action="processMovieSearch.php">
+   <p>Enter the Movie Name</p>
+   <input type="hidden" value="<?php echo $_SESSION['email']; ?>" name="email">
+   <input type="text" size="40" name="movie" style="border:2px black solid">
+   <input type="submit" value="SEARCH" style="font-style:bold;border:2px black solid">
+  </form>
+</div>
+<footer class="footer">
+ <div class="footer-content">
+  <p>&copy;2023 ROBOT SPACE. All Rights Reserved.</p>
+ </div>
+</footer>
+</body>
+</html>

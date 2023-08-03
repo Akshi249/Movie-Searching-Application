@@ -1,0 +1,31 @@
+body{
+margin:0;
+padding:0;
+overflow:hidden;
+}
+.animated-bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:url("image1.jpeg");
+animation: slideshow 10s infinite;
+}
+@keyframes slideshow {
+0%{
+background-image: url("image1.jpeg");
+ }
+25%{
+background-image: url("image2.jpeg");
+ }
+50%{
+background-image: url("image3.jpeg");
+ }
+75%{
+background-image: url("image2.jpeg");
+ }
+100%{
+background-image: url("image1.jpeg");
+ }
+}
